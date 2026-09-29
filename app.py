@@ -10,7 +10,7 @@ def create_app():
 
     @app.get("/health")
     def health():
-        return jsonify(status="ok", service="items-api")
+        return jsonify(status="ok", service="items-api", version="1.0.0")
 
     @app.get("/items")
     def list_items():
